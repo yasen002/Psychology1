@@ -1,0 +1,36 @@
+.container {
+  height: 200vh;
+  top: -115px;
+  clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
+  background-image: linear-gradient(to right bottom, #89beff7d, #b2d3c81e);
+  position: relative;
+}
+
+.prof-profile {
+  background-color: #eff6ff;
+  height: 95vh;
+  position: absolute;
+  top: 220px;
+  display: flex;
+  flex-wrap: row wrap;
+  padding: 30px;
+}
+
+.prof-profile__left {
+  flex: 1;
+  padding: 20px;
+}
+
+.prof__img {
+  background-image: url(/img/sunset.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  width: 100%;
+  height: 40%;
+}
+
+.prof-profile__intro {
+  padding: 20px;
+  flex: 2;
+}
