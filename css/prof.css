@@ -1,22 +1,28 @@
 .container {
-  height: 200vh;
   top: -115px;
-  clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
-  background-image: linear-gradient(to right bottom, #89beff7d, #b2d3c81e);
+  clip-path: polygon(0 6%, 100% 0, 100% 100%, 0% 100%);
+  background-image: linear-gradient(to right bottom, #89beffac, #b2d3c878);
   position: relative;
+  font-size: 1.5rem;
+  overflow: hidden;
 }
 
+.space-keepper1 {
+  background-image: linear-gradient(#0b1f36, #eff6fff8);
+  position: relative;
+  height: 210px;
+  width: 95vw;
+}
 .prof-profile {
   background-color: #eff6ff;
   height: 95vh;
-  position: absolute;
-  top: 220px;
+  position: relative;
   display: flex;
-  flex-wrap: row wrap;
   padding: 30px;
 }
 
 .prof-profile__left {
+  margin-top: 20vh;
   flex: 1;
   padding: 20px;
 }
@@ -26,11 +32,23 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 10px;
-  width: 100%;
-  height: 40%;
+  height: 50%;
 }
 
 .prof-profile__intro {
+  border-top: #eff6ff 20px solid;
+  margin-top: 15vh;
   padding: 20px;
   flex: 2;
+}
+
+.sub-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  word-spacing: 0.5rem;
+}
+
+h3.sub-title {
+  font-size: 1.5rem;
 }
