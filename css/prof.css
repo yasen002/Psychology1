@@ -28,7 +28,7 @@
 }
 
 .prof__img {
-  background-image: url(/img/sunset.jpg);
+  background-image: url(./img/sunset.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 10px;
