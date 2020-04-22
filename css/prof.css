@@ -1,10 +1,10 @@
 .container {
+  height: 100%;
   top: -115px;
   clip-path: polygon(0 6%, 100% 0, 100% 100%, 0% 100%);
   background-image: linear-gradient(to right bottom, #89beffac, #b2d3c878);
   position: relative;
   font-size: 1.5rem;
-  overflow: hidden;
 }
 
 .space-keepper1 {
@@ -13,33 +13,34 @@
   height: 210px;
   width: 95vw;
 }
-.prof-profile {
+
+.intro {
   background-color: #eff6ff;
-  height: 95vh;
   position: relative;
-  display: flex;
+  display: inline-flex;
   padding: 30px;
 }
 
-.prof-profile__left {
+.intro__left {
   margin-top: 20vh;
-  flex: 1;
+  flex: 4;
   padding: 20px;
+  height: auto;
 }
 
-.prof__img {
-  background-image: url(./img/sunset.jpg);
+.intro__left__img {
+  background-image: url(/img/sunset.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 10px;
   height: 50%;
 }
 
-.prof-profile__intro {
+.intro__right {
   border-top: #eff6ff 20px solid;
   margin-top: 15vh;
   padding: 20px;
-  flex: 2;
+  flex: 6;
 }
 
 .sub-title {

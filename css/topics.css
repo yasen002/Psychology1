@@ -1,15 +1,16 @@
 .topics {
-  padding: 30px;
+  margin: 1rem;
   min-height: 95vh;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
-  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  /*grid-template-rows: auto;
   grid-auto-rows: auto;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around center;
+  align-items: center; */
 }
 
 .topic {
+  margin: 15px;
   background-repeat: no-repeat;
   height: 27rem;
   width: 24rem;
