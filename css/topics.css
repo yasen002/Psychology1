@@ -2,23 +2,32 @@
   margin: 1rem;
   min-height: 95vh;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 1rem;
   /*grid-template-rows: auto;
   grid-auto-rows: auto;
   justify-content: space-around center;
   align-items: center; */
+  justify-content: center;
+  align-items: center;
 }
 
-.topic {
+/* .topic {
   margin: 15px;
   background-repeat: no-repeat;
   height: 27rem;
   width: 24rem;
   border-radius: 20px;
   background-size: cover;
+} */
+
+.topic img {
+  border: rebeccapurple soid;
+  width: 240px;
+  height: 270px;
 }
 
-.topics__topic1 {
+/* .topics__topic1 {
   background-image: url(../img/louis-reed-pwcKF7L4-no-unsplash02.jpg);
 }
 .topics__topic2 {
@@ -38,4 +47,4 @@
 }
 .topics__topic7 {
   background-image: url(../img/louis-reed-pwcKF7L4-no-unsplash02.jpg);
-}
+} */

@@ -17,23 +17,23 @@
 .intro {
   background-color: #eff6ff;
   position: relative;
-  display: inline-flex;
+  display: flex;
   padding: 30px;
+  /* height: 160vh; */
 }
 
 .intro__left {
   margin-top: 20vh;
   flex: 4;
-  padding: 20px;
-  height: auto;
 }
 
 .intro__left__img {
-  background-image: url(/img/sunset.jpg);
+  background-image: url(../img/sunset.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 10px;
-  height: 50%;
+  height: 250px;
+  max-width: 510px;
 }
 
 .intro__right {
