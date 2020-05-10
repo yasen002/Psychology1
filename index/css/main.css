@@ -1,0 +1,278 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-100px); }
+  80% {
+    transform: translate(10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px); }
+  80% { }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+/*---------------------------------------
+  Typorgraphy              
+-----------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0px; }
+
+h1 {
+  color: #3d3d3f;
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  line-height: normal; }
+
+h2 {
+  color: #575757;
+  font-size: 35px;
+  line-height: normal; }
+
+h3 {
+  color: #d7b065;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: 6px;
+  text-transform: uppercase; }
+
+h4 {
+  color: #797979;
+  font-size: 20px;
+  font-weight: 400; }
+
+p {
+  color: #878787;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0.2px; }
+
+strong,
+span {
+  color: #878787;
+  font-weight: normal; }
+
+.row {
+  max-width: calc(100vw - 26%);
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 30px; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: calc(100% / 10); }
+  .row .col-1-of-2 {
+    width: calc((100% - calc(100% / 10)) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * calc(100% / 10)) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * calc(100% / 10)) / 3) + calc(100% / 10)); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * calc(100% / 10)) / 4); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 3 * calc(100% / 10)) / 4) + calc(100% / 10)); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * calc(100% / 10)) / 4) + 2 * calc(100% / 10)); }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: #f0e3ff;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  overflow-x: hidden; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  height: 35px; }
+
+header {
+  height: 75vh;
+  margin: 10vh 30px 15vh 30px; }
+
+.text-box {
+  background: url(/img/background_lg.jpg) 50% 0 repeat-y fixed;
+  background-size: cover;
+  border-radius: 5px;
+  position: relative;
+  height: 95%;
+  width: calc(100vw - 26%);
+  background-color: rebeccapurple;
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center; }
+  .text-box .wrapper {
+    background-color: rgba(240, 227, 255, 0.5);
+    height: 70%;
+    width: 70%;
+    text-align: center; }
+    .text-box .wrapper h3,
+    .text-box .wrapper h1 {
+      padding-top: 40px; }
+
+.section1 {
+  height: 95vh;
+  width: calc(100vw - 26%);
+  margin: 0 auto;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center; }
+
+.section1 .wrap {
+  margin: 0 auto;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex-direction: row; }
+
+.container__intro__left-img {
+  background-image: url(/img/sunset.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  height: 250px; }
+
+.container-left {
+  width: 35%;
+  padding-right: 15px; }
+  .container-left p {
+    line-height: 2; }
+  .container-left h3 {
+    margin: 20px 0 5px 0; }
+
+.container-right {
+  background-color: #f8f2ff;
+  border-radius: 5px;
+  padding: 20px;
+  width: 65%;
+  flex-grow: 2; }
+  .container-right h2 {
+    margin-bottom: 32px; }
+  .container-right h3 {
+    padding: 30px; }
+  .container-right p {
+    line-height: 30px; }
+
+.section2 {
+  height: 90vh;
+  background-color: #f8f2ff;
+  position: relative; }
+
+.topics {
+  height: 100%;
+  margin: 0 auto;
+  width: calc(100vw - 26%);
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  flex-direction: row; }
+  .topics__topic1 {
+    transform: translate(0, -50px); }
+  .topics__topic2 {
+    transform: translate(0, -90px); }
+  .topics__topic3 {
+    transform: translate(0, -30px); }
+
+.topic {
+  max-width: 250px;
+  margin: 10px;
+  position: relative; }
+  .topic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: all 0.3s ease-out; }
+  .topic img:hover {
+    transform: translate(0, -10px) scale(1.03);
+    -webkit-box-shadow: 1px 5px 25px 13px #000000;
+    box-shadow: 1px 5px 25px 13px #000000; }
+
+/*---------------------------------------
+  Work Cited            
+-----------------------------------------*/
