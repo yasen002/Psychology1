@@ -133,7 +133,7 @@ header {
   position: relative;
   height: 95%;
   width: calc(100vw - 26%);
-  background-color: rebeccapurple;
+  background-color: rgba(240, 227, 255, 0.5);
   margin: 0 auto;
   text-align: center;
   display: -webkit-box;
@@ -261,17 +261,52 @@ header {
 
 .topic {
   max-width: 250px;
-  margin: 10px;
-  position: relative; }
+  margin: 10px; }
   .topic img {
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 5px;
-    transition: all 0.3s ease-out; }
-  .topic img:hover {
-    transform: translate(0, -10px) scale(1.03);
-    -webkit-box-shadow: 1px 5px 25px 13px #000000;
-    box-shadow: 1px 5px 25px 13px #000000; }
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777; }
+
+.topic {
+  position: relative; }
+  .topic .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    background-color: #d7b065;
+    border-radius: 5px; }
+    .topic .overlay ul {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+      list-style: url(/img/arrow.svg); }
+  .topic img {
+    width: 100%;
+    height: auto; }
+  .topic:hover .overlay {
+    opacity: 1; }
+
+.show-on-scroll {
+  transition: all 3s ease-out;
+  opacity: 0; }
+
+.is-visible {
+  opacity: 1; }
 
 /*---------------------------------------
   Work Cited            

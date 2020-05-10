@@ -1,3 +1,12 @@
+$grid-width: calc(100vw - 26%);
+$topic-img-width: calc(#{$grid-width/4});
+$gutter-vertical: 30px; //margin bottom
+$gutter-horizontal: calc(100% / 10);
+$color-primary: #f0e3ff;
+$color-overlay: #cc9fff;
+$color-secondary: #d7b065;
+$color-secondary-dark: #c59333;
+
 @mixin btn {
   letter-spacing: 0.1rem;
   word-spacing: 0.2rem;
