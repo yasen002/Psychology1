@@ -12,19 +12,11 @@
   align-items: center;
 }
 
-/* .topic {
-  margin: 15px;
-  background-repeat: no-repeat;
-  height: 27rem;
-  width: 24rem;
-  border-radius: 20px;
-  background-size: cover;
-} */
-
 .topic img {
   border: rebeccapurple soid;
   width: 240px;
   height: 270px;
+  border-radius: 5px;
 }
 
 /* .topics__topic1 {
