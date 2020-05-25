@@ -1,4 +1,8 @@
-$grid-width: calc(100vw - 26%);
+$grid-width: 1141px; //dynamic grid width(optional): calc(100vw - 26%)
+$grid-widthLg: 850px;
+$grid-widthMd: 580px;
+$grid-widthSm: 270px;
+
 $topic-img-width: calc(#{$grid-width/4});
 $gutter-vertical: 30px; //margin bottom
 $gutter-horizontal: calc(100% / 10);
@@ -32,37 +36,56 @@ $color-secondary-dark: #c59333;
   transform: translate(-50%, -50%);
 }
 
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translate(-100px);
-  }
-  80% {
-    transform: translate(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
+/*---------------------------------------
+  Media Query Mixins             
+-----------------------------------------*/
+
+// Media Query Mixins
+@mixin mediaSm {
+  @media screen and (max-width: 625px) {
+    @content;
   }
 }
 
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  80% {
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+@mixin mediaMd {
+  @media screen and (max-width: 925px) {
+    @content;
   }
 }
+
+@mixin mediaLg {
+  @media screen and (min-width: 924px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}
+
+// @mixin mediaSm {
+//   @media screen and (max-width: 625px) {
+//     @content;
+//   }
+// }
+
+// @mixin mediaMd {
+//   @media screen and (min-width: 912px) and (max-width: 1179px) {
+//     @content;
+//   }
+// }
+
+// @mixin mediaLg {
+//   @media screen and (min-width: 1180px) {
+//     @content;
+//   }
+// }
 
 /*---------------------------------------
   Typorgraphy              
 -----------------------------------------*/
-
 h1,
 h2,
 h3,
@@ -114,4 +137,34 @@ strong,
 span {
   color: #878787;
   font-weight: normal;
+}
+
+/*---------------------------------------
+  Animation           
+-----------------------------------------*/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  80% {
+    transform: translate(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  80% {
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
