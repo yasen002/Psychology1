@@ -42,6 +42,7 @@ header {
     background: url(/img/background_lg.jpg) 50% 0 repeat-y fixed;
     background-size: cover;
     border-radius: 5px;
+    padding: 20px;
     position: relative;
     height: 95%;
     width: $grid-width;
@@ -163,7 +164,6 @@ main {
         margin-bottom: 32px;
       }
       h3 {
-        padding: 30px;
       }
       p {
         line-height: 30px;

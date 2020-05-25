@@ -134,6 +134,7 @@ header {
     background: url(/img/background_lg.jpg) 50% 0 repeat-y fixed;
     background-size: cover;
     border-radius: 5px;
+    padding: 20px;
     position: relative;
     height: 95%;
     width: 1141px;
@@ -253,8 +254,6 @@ main {
           flex-basis: 270px; } }
       .section1 .wrap .container-right h2 {
         margin-bottom: 32px; }
-      .section1 .wrap .container-right h3 {
-        padding: 30px; }
       .section1 .wrap .container-right p {
         line-height: 30px; }
 
